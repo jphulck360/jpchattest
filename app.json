@@ -1,0 +1,10 @@
+{
+  "name": "JPChat",
+  "description": "An Action Cable + Rails 5 example app",
+  "keywords": ["rails 5", "action cable", "websockets"],
+  "success_url": "/",
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  },
+  "addons": ["heroku-redis"]
+}

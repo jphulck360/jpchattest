@@ -1,0 +1,40 @@
+<table align="center">
+  <tr>
+    <td>
+      <div>
+        <%= image_tag 'logo.png' %>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+
+    <!-- <h2 id="log-in-title">Tela de Login</h2> -->
+
+    <div class="auth-form well">
+
+      <%= form_for(User.new, url: login_path) do |f| %>
+        <%= f.label 'login' %>
+        <div class="input-group">
+          <%= f.text_field :username, class: "form-control"%>
+        </div>
+
+        <br>
+
+        <%= f.label 'Senha' %>
+        <div class="input-group">
+          <%= f.text_field :password, class: "form-control"%>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Logar", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+
+    </div>
+
+    <%= render partial: 'layouts/flash_errors'%>
+  </div>
+</div>

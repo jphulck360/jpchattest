@@ -1,0 +1,106 @@
+  # PostgreSQL. Versions 9.1 and up are supported.
+#
+# Install the pg driver:
+#   gem install pg
+# On OS X with Homebrew:
+#   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
+# On OS X with MacPorts:
+#   gem install pg -- --with-pg-config=/opt/local/lib/postgresql84/bin/pg_config
+# On Windows:
+#   gem install pg
+#       Choose the win32 build.
+#       Install PostgreSQL and put its /bin directory on your path.
+#
+# Configure Using Gemfile
+# gem 'pg'
+#
+
+# Forma antiga
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode
+
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+# development:
+#   <<: *default
+#   database: chatty_development
+
+# test:
+#   <<: *default
+#   database: chatty_test
+
+# production:
+#   <<: *default
+#   database: chatty_production
+#   username: chatty
+#   password: <%= ENV['CHATTY_DATABASE_PASSWORD'] %>
+
+
+
+# mysql2
+# development:
+#   adapter: mysql2
+#   encoding: utf8
+#   reconnect: false
+#   database: chatjp_db
+#   pool: 5
+#   username: root
+#   password: root
+#   host: localhost
+
+# test:
+#   adapter: mysql2
+#   encoding: utf8
+#   reconnect: false
+#   database: chatjp_db
+#   pool: 5
+#   username: root
+#   password: root
+#   host: localhost
+
+# production:
+#   adapter: mysql2
+#   encoding: utf8
+#   reconnect: false
+#   database: chatjp_db
+#   pool: 5
+#   username: root
+#   password: root
+#   host: localhost
+
+
+
+
+
+
+#postgresql
+development:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: chatjp_db
+  pool: 5
+  username: postgres
+  password: sismat
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: chatjp_db
+  pool: 5
+  username: postgres
+  password: sismat
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: chatjp_db
+  pool: 5
+  username: postgres
+  password: sismat
+  host: localhost
