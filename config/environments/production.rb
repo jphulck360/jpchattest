@@ -42,11 +42,11 @@ Rails.application.configure do
   # config.action_cable.url = 'wss://example.com/cable'
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
-  #config.action_cable.url = 'wss://jpchattest.herokuapp.com'
-  #config.action_cable.allowed_request_origins = [ 'https://jpchattest.herokuapp.com', 'https://jpchattest.herokuapp.com' ]
+  config.action_cable.url = 'wss://jpchattest.herokuapp.com'
+  config.action_cable.allowed_request_origins = [ 'https://jpchattest.herokuapp.com', 'https://jpchattest.herokuapp.com' ]
 
-  config.action_cable.url = 'wss://jpcompchat.herokuapp.com'
-  config.action_cable.allowed_request_origins = [ 'https://jpcompchat.herokuapp.com', 'https://jpcompchat.herokuapp.com' ]
+  #config.action_cable.url = 'wss://jpcompchat.herokuapp.com'
+  #config.action_cable.allowed_request_origins = [ 'https://jpcompchat.herokuapp.com', 'https://jpcompchat.herokuapp.com' ]
 
 
 
